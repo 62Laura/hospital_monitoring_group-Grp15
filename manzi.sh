@@ -6,7 +6,7 @@ generate_heart_rate() {
 }
 
 # Get the device name passed as an argument
-device_name=$1
+monitor_name=$1
 echo "$1"
 # Start logging heart rate data to heart_rate_log.txt
 while true
