@@ -1,14 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Prompt the user to enter the device name
-read -p "Enter the device name: " Monitor_name
+# Prompt the user for the device name
+read -p "Enter device name: " devName
 
-# Log file where heart rate data will be stored
-log_file="heart_rate_log.txt"
-
-# Function to generate a random heart rate between 40 and 100
-generate_heart_rate() {
-    echo $((HEART_RATE % 61 + 40))
-}
+# Call the manzi.sh script with the device name as an argument
+./manzi.sh "$devName" &
 
 
