@@ -10,7 +10,7 @@ devName="$1"
 
 # Infinite loop to log heart rate data every second
 while true; do
-    rand=$(shuf -i 65-200 -n 1)
+    rand=$(shuf -i 40-100 -n 1)
     echo "$(date +"%F %T") $devName $rand" >> heart_rate_log.txt
     sleep 1
 done
